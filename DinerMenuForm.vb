@@ -3,7 +3,7 @@ Option Explicit On
 
 'Taylor Herndon
 'RCET0265
-'Spring 2020
+'Spring 2021
 'Diner Menu
 'https://github.com/TaylorHerndon/DinerMenu
 
