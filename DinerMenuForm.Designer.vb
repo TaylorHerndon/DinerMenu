@@ -46,7 +46,7 @@ Partial Class DinerMenuForm
         Me.SaladButton.Name = "SaladButton"
         Me.SaladButton.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.SaladButton.Size = New System.Drawing.Size(208, 69)
-        Me.SaladButton.TabIndex = 0
+        Me.SaladButton.TabIndex = 1
         Me.SaladButton.Text = "SALAD"
         Me.SaladButton.UseMnemonic = False
         Me.SaladButton.UseVisualStyleBackColor = True
@@ -57,7 +57,7 @@ Partial Class DinerMenuForm
         Me.FishButton.Name = "FishButton"
         Me.FishButton.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.FishButton.Size = New System.Drawing.Size(208, 69)
-        Me.FishButton.TabIndex = 0
+        Me.FishButton.TabIndex = 2
         Me.FishButton.Text = "FISH"
         Me.FishButton.UseVisualStyleBackColor = True
         '
@@ -83,6 +83,7 @@ Partial Class DinerMenuForm
         '
         'ExitButton
         '
+        Me.ExitButton.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.ExitButton.Location = New System.Drawing.Point(801, 500)
         Me.ExitButton.Name = "ExitButton"
         Me.ExitButton.Size = New System.Drawing.Size(149, 69)
@@ -92,8 +93,10 @@ Partial Class DinerMenuForm
         '
         'DinerMenuForm
         '
+        Me.AcceptButton = Me.SoupButton
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.CancelButton = Me.ExitButton
         Me.ClientSize = New System.Drawing.Size(962, 582)
         Me.Controls.Add(Me.ExitButton)
         Me.Controls.Add(Me.DisplaySpecialLabel)
