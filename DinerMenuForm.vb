@@ -10,7 +10,7 @@ Option Explicit On
 Public Class DinerMenuForm
 
     'Modifies the text of DisplaySpecialLabel to a description of a baked potato soup if soup button is pressed
-    Private Sub SoupButtonClick(sender As Object, e As EventArgs) Handles SoupButton.MouseDown
+    Private Sub SoupButtonClick(sender As Object, e As EventArgs) Handles SoupButton.Click
 
         DisplaySpecialLabel.Text = "      ~ Guy Fieri's Loaded Baked Potato Soup ~     " & vbNewLine & vbNewLine &
                                    "Get ready to be happy with Guy Fieri's loaded baked" & vbNewLine &
@@ -22,7 +22,7 @@ Public Class DinerMenuForm
     End Sub
 
     'Modifies the text of DisplaySpecialLabel to a description of a corn salad if the salad button is pressed
-    Private Sub SaladButtonClick(sender As Object, e As EventArgs) Handles SaladButton.MouseDown
+    Private Sub SaladButtonClick(sender As Object, e As EventArgs) Handles SaladButton.Click
 
         DisplaySpecialLabel.Text = "~Guy Fieri's Chipotle Corn Salad and Grilled Bacon~" & vbNewLine & vbNewLine &
                                    "   Welcome to flavor town, 'If there's a vegtable  " & vbNewLine &
@@ -33,7 +33,7 @@ Public Class DinerMenuForm
     End Sub
 
     'Modifies the text of DisplaySpecialLabel to a description of Fish Tacos if the fish button is pressed
-    Private Sub FishButtonClick(sender As Object, e As EventArgs) Handles FishButton.MouseDown
+    Private Sub FishButtonClick(sender As Object, e As EventArgs) Handles FishButton.Click
 
         DisplaySpecialLabel.Text = "      ~ Guy Fieri's Tequila Lime Fish Tacos ~      " & vbNewLine & vbNewLine &
                                    "Fresh caught mahi mahi marinated in tequila, cumin," & vbNewLine &
